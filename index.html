@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MedHelp</title>
+    
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+          <h1 id="nav-h1">MedHelp</img></h1>
+          <span class="navbar-toggle" id="js-navbar-toggle">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+          </span>
+          <ul class="main-nav" id="js-menu">
+              <li>
+                  <a href="" class="nav-links" onclick="toggle();">Cyka</a>
+              </li>
+              
+          </ul>
+      </nav>
+  </header>
+
+  <div class="info">
+    <div class="symptom">
+        <p>Enter symptom</p>
+        <input type="text" name="Enter symptom" id="sym" placeholder="Enter symptom"/>
+    </div>
+    <div class="age">
+        <p>Enter year of birth</p>
+        <input type="text" name="DOB" id="age" placeholder="Enter year of birth"/>
+    </div>
+    <div class="gender">
+        <p>Enter Gender</p>
+        <input type="text" name="Enter Gender" id="gen" placeholder="Enter Gender"/>
+    </div>
+    <div class="run">
+        <br>
+        <button onclick=find()>Go</button>
+    </div>
+  </div>
+
+  <div id="soln"></div>
+  
+  <script src="js/main.js"></script>
+  </body>
+</html>
